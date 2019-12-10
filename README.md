@@ -24,3 +24,29 @@ Damit "Infrastructure as Code" auf "Dynamic Infrastructure Platforms" genutzt we
 Um Konfigurationsdateien mit dem "Infrastruktur als Code" Ansatz zu bearbeiten, eigen sich u.a. folgende Tools:
 ## sed
 sed (von stream editor) ist ein nicht-interaktiver Texteditor für die Verwendung auf der Kommandozeile oder in Skripten. sed zählt zu den "Urgesteinen" in der Unix- / Linux-Welt und ist quasi in jeder Linux-Installation (auch Minimalinstallationen) enthalten.
+
+## SSH Tunnel
+Befehle für SSH Tunnel.
+```
+vagrant ssh
+sudo -s
+```
+Admin user erstellen
+```
+adduser admin01
+```
+Password: luki2001
+```
+usermod -aG sudo admin01
+sudo su - admin01
+```
+SSH Key erstellen
+```
+ssh-keygen -t rsa -b 4096
+```
+Public Key kopieren
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub admin01@db01
+#Wenn dieser Befehlt nicht funktioniert dann:
+cat id_rsa.pub | ssh db01 'cat>> ~/.ssh/authorized_keys'
+```
