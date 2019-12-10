@@ -48,3 +48,36 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub admin01@db01
 #Wenn dieser Befehlt nicht funktioniert dann:
 cat id_rsa.pub | ssh db01 'cat>> ~/.ssh/authorized_keys'
 ```
+
+## UFW Firewall
+Befehle für das aufsetzen der UFW Firewall
+
+Zuerst müssen wir natürlich UFW überhaupt installieren, falls dies nicht schon erledigt ist.
+```
+sudo apt-get install ufw
+```
+
+Folgender Befehl gibt die Offenen Ports aus
+```
+netstatt -tulpen
+```
+Um den TCP Port 80 zu öffnen also den Standard Port für den Apache dienst (http). Muss folgender Befehl eingegeben werden:
+```
+sudo ufw allow 80/tcp
+```
+Wichtig bevor die Firewall aktiviert wird noch den SSH Port freigeben, ansonsten wird der Zugriff von SSH abgeblockt. Falls die IP des Host Computers nicht immer gleich bleibt am besten einfach allen Geräten auf den Port 22 Zugriff lassen.
+```
+sudo ufw allow 22
+```
+Falls die IP des Host PC bleibt kann diese spezifische IP auch genannt werden.
+```
+sudo ufw allow from [Host PC IP] to any port 22
+```
+Jetzt kann die Firewall aktiviert werden
+```
+sudo ufw enable
+```
+Den Status kann man folgendermassen aufrufen.
+```
+sudo ufw status
+```
