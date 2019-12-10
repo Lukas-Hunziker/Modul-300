@@ -1,5 +1,7 @@
 # Modul-300
 
+Um diese "Dokumentation" zu schreiben habe ich die Website https://stackedit.io benutzt.
+
 ```
 $  cd Pfad/zu/meinem/Repository    # Zum lokalen GitHub-Repository wechseln
 
