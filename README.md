@@ -5,14 +5,17 @@ Um diese "Dokumentation" zu schreiben habe ich die Website https://stackedit.io 
 
 ## Git Commands:
 ```
-$  cd Pfad/zu/meinem/Repository    # Zum lokalen GitHub-Repository wechseln
+cd Pfad/zu/meinem/Repository    # Zum lokalen GitHub-Repository wechseln
 
-$  git status                      # Geänderte Datei(en) werden rot aufgelistet
-$  git add -A                      # Fügt alle Dateien zum "Upload" hinzu
-$  git status                      # Der Status ist nun grün > Dateien sind Upload-bereit (Optional) 
-$  git commit -m "Mein Kommentar"  # Upload wird "commited" > Kommentar zu Dokumentationszwecken ist dafür notwendig
-$  git status                      # Dateien werden nun als "zum Pushen bereit" angezeigt
-$  git push                        #Upload bzw. Push wird durchgeführt
+git pull                        #Synchronisiert das repository mit der aktuellen online version
+
+git status                      # Geänderte Datei(en) werden rot aufgelistet
+git add -A                      # Fügt alle Dateien zum "Upload" hinzu
+git status                      # Der Status ist nun grün > Dateien sind Upload-bereit (Optional) 
+git commit -m "Mein Kommentar"  # Upload wird "commited" > Kommentar zu Dokumentationszwecken ist dafür notwendig
+git status                      # Dateien werden nun als "zum Pushen bereit" angezeigt
+git push                        #Upload bzw. Push wird durchgeführt
+
 ```
 
 Unter **[Cloud Computing](https://de.wikipedia.org/wiki/Cloud_Computing)** (deutsch Rechnerwolke) versteht man die Ausführung von Programmen, die nicht auf dem lokalen Rechner installiert sind, sondern auf einem anderen Rechner, der aus der Ferne aufgerufen wird (bspw. über das Internet).
