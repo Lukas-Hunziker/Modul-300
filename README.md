@@ -271,7 +271,7 @@ Flask==0.12
 flask-restful==0.3.5
 ```
 Für die Webseite wurde ein einfach PHP file erstellt, was folgendermassen aussieht:
-``
+```
 <html>
 	<head>
 		<title>My Webshop</title>
