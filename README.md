@@ -24,6 +24,26 @@ Damit "Infrastructure as Code" auf "Dynamic Infrastructure Platforms" genutzt we
 *	**Self-Service** - Ressourcen anpassen und auf eigene Bedürfnisse zuschneiden.
 *	**Portabel** - Anbieter von Ressourcen müssen austauschbar sein. Sicherheit, Zertifizierungen (z.B. [ISO 27001](https://de.wikipedia.org/wiki/ISO/IEC_27001)), ...
 
+## Vagrant einrichten
+Befehle für das einrichten von Vagrant
+
+```
+vagrant init ubuntu/xenial64        #Vagrantfile erzeugen
+vagrant up --provider virtualbox    #Virtuelle Maschine erstellen & starten
+```
+Die VM ist jetzt erfolgreich gestartet. Jetzt kann mit SSH verbindet werden
+```
+vagrant ssh
+```
+Die VM kann gelöscht werden mit
+```
+Vagrant Destroy
+```
+Um die VM auf den neusten stand des Vagrant files zu bringen kann dieser Befehl genutzt werden.
+```
+vagrant upgrade
+```
+
 ## sed
 sed (von stream editor) ist ein nicht-interaktiver Texteditor für die Verwendung auf der Kommandozeile oder in Skripten. sed zählt zu den "Urgesteinen" in der Unix- / Linux-Welt und ist quasi in jeder Linux-Installation (auch Minimalinstallationen) enthalten.
 
