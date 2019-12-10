@@ -45,7 +45,7 @@ Vagrant.configure(2) do |config|
   
   #If you know specific Ip do: sudo ufw allow from 10.230.42.124 to any port 22
   sudo ufw allow 22
-  sudo ufw enable
+  #sudo ufw enable
   
   SHELL
 end

@@ -331,3 +331,371 @@ g version 229
 [   98.683794] sd 2:0:0:0: [sda] Assuming drive cache: write through
 [   98.887467]  sda: sda1
 [   98.973187] sd 2:0:0:0: [sda] Attached SCSI disk
+Begin: Loading e[  100.645661] md: linear personality registered for level -1
+ssential drivers[  100.872743] md: multipath personality registered for level -4
+ ... [  101.119231] md: raid0 personality registered for level 0
+[  101.329489] md: raid1 personality registered for level 1
+[  101.581740] raid6: sse2x1   gen() 10516 MB/s
+[  101.802005] raid6: sse2x1   xor()  7676 MB/s
+[  102.002028] raid6: sse2x2   gen() 10956 MB/s
+[  102.218390] raid6: sse2x2   xor()  8974 MB/s
+[  102.429867] raid6: sse2x4   gen() 14978 MB/s
+[  102.649757] raid6: sse2x4   xor()  9982 MB/s
+[  102.873891] raid6: avx2x1   gen() 20774 MB/s
+[  103.101812] raid6: avx2x2   gen() 20480 MB/s
+[  103.329787] raid6: avx2x4   gen() 26216 MB/s
+[  103.490158] raid6: using algorithm avx2x4 gen() 26216 MB/s
+[  103.705413] raid6: using avx2x2 recovery algorithm
+[  103.842865] xor: automatically using best checksumming function:
+[  104.066378]    avx       : 22428.000 MB/sec
+[  104.203745] async_tx: api initialized (async)
+[  104.318914] md: raid6 personality registered for level 6
+[  104.472484] md: raid5 personality registered for level 5
+[  104.622923] md: raid4 personality registered for level 4
+[  104.832682] md: raid10 personality registered for level 10
+done.
+Begin: Running /scripts/init-p[  105.061330] Btrfs loaded
+remount ... done.
+Begin: Mounting root file system ... Begin: R[  105.201054] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+unning /scripts/local-top ... done.
+Begin: Running /scripts/local-premount ... Scanning for Btrfs filesystems
+done.
+Warning: fsck not present, so skipping root file system
+done.
+Begin: Running /scripts/local-bottom ... done.
+Begin: Running /scripts/init-bottom ... done.
+[  105.894624] systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+[  106.591737] systemd[1]: Detected virtualization oracle.
+[  106.750126] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mUbuntu 16.04.6 LTS[0m!
+
+[  106.987954] systemd[1]: Set hostname to <ubuntu>.
+[  107.184773] random: nonblocking pool is initialized
+[  107.311322] systemd[1]: Initializing machine ID from random generator.
+[  107.461007] systemd[1]: Installed transient /etc/machine-id file.
+[ 07482]ysmd]:tated igr sovconf uatfo nwod S.
+[[0;32m  OK  [0m] Started Trigger resolvconf update for networkd DNS.
+[  1.996 ste[1 Lteing ondeKeelock.
+[[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[ 09546]ysmd]: Listeng  Dic-mapr endaonIF.
+[[0;32m  OK  [0m] Listening on Device-mapper event daemon FIFOs.
+[ 103079] syem1]Rehetaget Enryedoles
+
+[[0;32m  OK  [0m] Reached target Encrypted Volumes.
+[ 11.7703]ysmd]:taedorrdasord qutso llirtoy Watch.
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[  1.019 ste[1 Lteing  Jrn Aitoct.
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+[ 13383]ysmd]:isning oLV mada em scket.
+[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
+[ 143096] systd[: stinonLVM2po dmosoet
+
+[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
+[  115467]ysmd]:isni oJonal Sock (evog
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[ 16.76429 ste[1 Cat sceysm ic
+[[0;32m  OK  [0m] Created slice System Slice.
+[ 1798950] ste[1 St uputou Aitryxetae leoratFi SteAumot oint.
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab...ats File System Automount Point.
+[ 19.01465syem1]Lienng o/d/itc Cpabiity Named pe
+
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[ 20701]ysmd]:Createsle erndesonlice.
+[[0;32m  OK  [0m] Created slice User and Session Slice.
+[ 20659]ysmd]:eaedargeSles
+
+[[0;32m  OK  [0m] Reached target Slices.
+[ 21659026sytemd]:reedli steseal2dtt.sce
+
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[ 225941] yystd[: sting ondeCoroSoet
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+[ 2306123] ste[1 Rachetaetysm meynroze
+[[0;32m  OK  [0m] Reached target System Time Synchronized.
+[ 24454] systemd]:eaedtarg Sp.
+[[0;32m  OK  [0m] Reached target Swap.
+[ 25703]ysmd]:Listinonoualoct.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+[  125.922439] systemd[1]: Starting Load Kernel Modules...
+         [  126.122975] Loading iSCSI transport class v2.0-870.
+Starting Load Ke[  126.271328] iscsi: registered transport (tcp)
+rnel Modules...
+[  126.447172] iscsi: registered transport (iser)
+[  126.599305] systemd[1]: Mounting Huge Pages File System...
+         Mounting Huge Pages File System...
+[  126.901823] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+         Starting Create list of required st... nodes for the current kernel...
+[  127.394476] systemd[1]: Starting Uncomplicated firewall...
+         Starting Uncomplicated firewall...
+[  127.693970] systemd[1]: Starting Remount Root and Kernel File Systems...
+         [  127.951436] EXT4-fs (sda1): re-mounted. Opts: (null)
+Starting Remount Root and Kernel File Systems...
+[  128.242511] systemd[1]: Mounting Debug File System...
+         Mounting Debug File System...
+[  128.514470] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[  128.842497] systemd[1]: Starting Nameserver information manager...
+         Starting Nameserver information manager...
+[  129.162453] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+         Starting Monitoring of LVM2 mirrors... dmeventd or progress polling...
+[ 29599]ysmd]:eached tgeUs a Gupam Looku.
+[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
+[  130.646566] systemd[1]: Starting Set console keymap...
+         Starting Set console keymap...
+[  130.866269] systemd[1]: Listening on Syslog Socket.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+[  131.142347] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[  131.379442] systemd[1]: Mounted Debug File System.
+[[0;32m  OK  [0m] Mounted Debug File System.
+[  131194]ystemd1]MoteHue Pas leysm.
+[[0;32m  OK  [0m] Mounted Huge Pages File System.
+[ 32398]system1]Mote POS Msa Que FilSyem.
+[[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
+[ 33.3540]ystemd[1: StteJonaSeic
+[[0;32m  OK  [0m] Started Journal Service.
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+[[0;32m  OK  [0m] Started Create list of required sta...ce nodes for the current kernel.
+[[0;32m  OK  [0m] Started Uncomplicated firewall.
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Started Set console keymap.
+[[0;32m  OK  [0m] Started Nameserver information manager.
+[[0;32m  OK  [0m] Started LVM2 metadata daemon.
+         Starting udev Coldplug all Devices...
+         Starting Load/Save Random Seed...
+         Starting Create Static Device Nodes in /dev...
+         Starting Apply Kernel Variables...
+         Mounting FUSE Control File System...
+         Starting Flush Journal to Persistent Storage...
+[[0;32m  OK  [0m] Mounted FUSE Control File System.
+[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,...ng dmeventd or progress polling.
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+         Starting udev Kernel Device Manager...
+[[0;32m  OK  [0m] Reached target Local File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting Initial cloud-init job (pre-networking)...
+         Starting Commit a transient machine-id on disk...
+         Starting Set console font and keymap...
+         Starting LSB: AppArmor initialization...
+         Starting Tell Plymouth To Write Out Runtime Data...
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+[[0;32m  OK  [0m] Started Commit a transient machine-id on disk.
+[[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
+[   75.266177] cloud-init[491]: Cloud-init v. 19.2-36-g059d049c-0ubuntu2~16.04.1 running 'init-local' at Tue, 10 Dec 2019 23:10:59 +0000. Up 74.85 seconds.
+[[0;32m  OK  [0m] Started Initial cloud-init job (pre-networking).
+[[0;32m  OK  [0m] Started Set console font and keymap.
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[[0;32m  OK  [0m] Created slice system-getty.slice.
+[[0;32m  OK  [0m] Reached target Network (Pre).
+         Starting Create Volatile Files and Directories...
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Started Create Volatile Files and Directories.
+         Starting Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Started LSB: AppArmor initialization.
+         Starting Raise network interfaces...
+[[0;32m  OK  [0m] Started Raise network interfaces.
+         Starting Initial cloud-init job (metadata service crawler)...
+[[0;32m  OK  [0m] Reached target Network.
+[   78.643412] cloud-init[953]: Cloud-init v. 19.2-36-g059d049c-0ubuntu2~16.04.1 running 'init' at Tue, 10 Dec 2019 23:11:02 +0000. Up 77.96 seconds.
+[[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
+[[   78.915223] cloud-init[953]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+[   79.122881] cloud-init[953]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
+[0;32m  OK  [0m] Reached target Network is Online.
+[   79.123000] cloud-init[953]: ci-info: | Device |   Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+[   79.781350] cloud-init[953]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
+[   79.782035] cloud-init[953]: ci-info: | enp0s3 |  True |         10.0.2.15          | 255.255.255.0 | global | 02:39:67:e0:78:98 |
+         Starting iSCSI initiator daemon (iscsid)...
+[   79.782226] cloud-init[953]: ci-info: | enp0s3 |  True | fe80::39:67ff:fee0:7898/64 |       .       |  link  | 02:39:67:e0:78:98 |
+[[0;32m  OK  [0m] Reached target System Initialization.
+[   80.353562] cloud-init[953]: ci-info: | enp0s8 | False |             .              |       .       |   .    | 08:00:27:66:29:b9 |
+[   80.936926] cloud-init[953]: ci-info: |   lo   |  True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+[   80.937265] cloud-init[953]: ci-info: |   lo   |  True |          ::1/128           |       .       |  host  |         .         |
+         Starting LXD - unix socket.
+[   80.937428] cloud-init[953]: ci-info: +--------+-------+----------------------------+---------------+--------+-------------------+
+[   81.652888] cloud-init[953]: ci-info: +++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++
+[   81.653254] cloud-init[953]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+[[0;32m  OK  [0m] Started ACPI Events Check.
+[   81.653422] cloud-init[953]: ci-info: | Route | Destination | Gateway  |    Genmask    | Interface | Flags |
+[   82.122762] cloud-init[953]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+[[0;32m  OK  [0m] Reached target Paths.
+[   82.123102] cloud-init[953]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |    0.0.0.0    |   enp0s3  |   UG  |
+[   82.756341] cloud-init[953]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  | 255.255.255.0 |   enp0s3  |   U   |
+[   82.756821] cloud-init[953]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+         Starting Socket activation for snappy daemon.
+[   82.757000] cloud-init[953]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[   83.194774] cloud-init[953]: ci-info: +-------+-------------+---------+-----------+-------+
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+[[   83.195013] cloud-init[953]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[   83.597676] cloud-init[953]: ci-info: +-------+-------------+---------+-----------+-------+
+[0;32m  OK  [0m] Started Message of the Day.
+[   83.597877] cloud-init[953]: ci-info: |   0   |  fe80::/64  |    ::   |   enp0s3  |   U   |
+[[0;32m  OK  [0m] Started Daily apt download activities.
+[[   83.957575] cloud-init[953]: ci-info: |   3   |   ff00::/8  |    ::   |   enp0s3  |   U   |
+[   84.181797] cloud-init[953]: ci-info: +-------+-------------+---------+-----------+-------+
+[0;32m  OK  [0m] Listening on ACPID Listen Socket.
+[[   84.181962] cloud-init[953]: Generating public/private rsa key pair.
+[   84.585000] cloud-init[953]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+[0;32m  OK  [0m] Listening on UUID daemon activation socket.
+[[   84.585191] cloud-init[953]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+[   84.929264] cloud-init[953]: The key fingerprint is:
+[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[   84.929432] cloud-init[953]: SHA256:mycA5u5cyyVGeAZg0rctmHH6RuTQZSl1L7q0K4kvXXY root@ubuntu-xenial
+[   85.233108] cloud-init[953]: The key's randomart image is:
+[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+[   85.233198] cloud-init[953]: +---[RSA 2048]----+
+[   85.641111] cloud-init[953]: |..o. o+..        |
+[[0;32m  OK  [0m] Reached target Timers.
+[   85.641383] cloud-init[953]: | o+.*... .       |
+[   85.968666] cloud-init[953]: |   @++  . .      |
+[[0;32m  OK  [0m] Reached target Cloud-config availability.
+[   86.087156] cloud-init[953]: |  +o=+.. .       |
+[   86.255052] cloud-init[953]: |   oo.B S        |
+[   86.337051] cloud-init[953]: |   .o=o+Eo       |
+[[0;32m  OK  [0m] Listening on LXD - unix socket.
+[[0;32m  OK  [0m[   86.417040] ] cloud-initListening on Socket activation for snappy daemon.[953]: 
+|   +.+*.= .      |
+[   86.660685] cloud-init[953]: |  oo++ = o       |
+[   86.661136] cloud-init[953]: |   o+.+          |
+[[0;32m  OK  [0m] Started iSCSI initiator daemon (iscsid).
+[   86.661443] cloud-init[953]: +----[SHA256]-----+
+[   86.968728] cloud-init[953]: Generating public/private dsa key pair.
+[   86.969435] cloud-init[953]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+         Starting Login to default iSCSI targets...
+[   86.969589] cloud-init[953]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+[   87.306344] cloud-init[953]: The key fingerprint is:
+[[0;32m  OK  [0m] Reached target Sockets.
+[[   87.306617] cloud-init[953]: SHA256:RTRcIKxVpaD+kX3ALaMiheBBDWZTCBeGRKI9OkC9eV0 root@ubuntu-xenial
+[   87.593247] cloud-init[953]: The key's randomart image is:
+[0;32m  OK  [0m] Reached target Basic System.
+[   87.593475] cloud-init[953]: +---[DSA 1024]----+
+[   87.940958] cloud-init[953]: |=B&*.  .o+*+o    |
+[   87.941732] cloud-init[953]: |=B.=.. .oE.+     |
+         Starting System Logging Service...
+[   87.942026] cloud-init[953]: |o + + +o. B .    |
+[   88.236757] cloud-init[953]: |.. + +.. = +     |
+[   88.237311] cloud-init[953]: |o   o o S . .    |
+         Starting Pollinate to seed the pseudo random number generator...
+[   88.237570] cloud-init[953]: | .   . o . .     |
+[   88.600455] cloud-init[953]: |        .        |
+[   88.601127] cloud-init[953]: |                 |
+[[0;32m  OK  [0m] Started ACPI event daemon.
+[   88.601374] cloud-init[953]: |                 |
+[   88.896850] cloud-init[953]: +----[SHA256]-----+
+[   88.897437] cloud-init[953]: Generating public/private ecdsa key pair.
+[[0;32m  OK  [0m] Started Deferred execution scheduler.
+[   88.897614] cloud-init[953]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+[   89.297114] cloud-init[953]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
+[   89.297867] cloud-init[953]: The key fingerprint is:
+         Starting Virtualbox guest utils...
+[   89.298214] cloud-init[953]: SHA256:Jfc3bz0lc35ujtty7hxuvg0E8MIADlOEUjJsaO69PpM root@ubuntu-xenial
+[   89.736769] cloud-init[953]: The key's randomart image is:
+[   89.737346] cloud-init[953]: +---[ECDSA 256]---+
+         Starting LSB: Record successful boot for GRUB...
+[   89.737637] cloud-init[953]: | oo.+++.. .      |
+[   90.108852] cloud-init[953]: |..+o.+   o o     |
+[   90.109411] cloud-init[953]: |o. .  . . = o    |
+         Starting LXD - container startup/shutdown...
+[   90.109752] cloud-init[953]: | .       + o .   |
+[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
+[   90.385513] cloud-init[953]: |. .     S   . * o|
+[   90.544664] cloud-init[953]: | . .         o Bo|
+[   90.545125] cloud-init[953]: |    o         .o*|
+         Starting Accounts Service...
+[   90.545401] cloud-init[953]: |   E          oOB|
+[   90.852610] cloud-init[953]: |  ..o         =%X|
+[   90.853376] cloud-init[953]: +----[SHA256]-----+
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
+[   90.853741] cloud-init[953]: Generating public/private ed25519 key pair.
+[   91.241052] cloud-init[953]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
+[   91.241605] cloud-init[953]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
+         Starting LSB: MD monitoring daemon...
+[   91.241804] cloud-init[953]: The key fingerprint is:
+[   91.712476] cloud-init[953]: SHA256:hRQM0i1qemK276iD/9Ux024t90Sn1LtFqUCHlTR2DIc root@ubuntu-xenial
+[   91.713045] cloud-init[953]: The key's randomart image is:
+         Starting Login Service...
+[   91.713345] cloud-init[953]: +--[ED25519 256]--+
+[   92.052825] cloud-init[953]: |    ...+o.  .*=o |
+[   92.053202] cloud-init[953]: |     .o.o.  +E+. |
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.
+[   92.054384] cloud-init[953]: |     . .. .o .   |
+         Starting Snappy daemon...
+[   92.363281] cloud-init[953]: |    o    o. .  ..|
+         Starting /etc/rc.local Compatibility...
+[[0;32m  OK  [0m] Started System Logging Service.
+[[0;32m  OK  [0m] Started Snappy daemon.
+[[0;32m  OK  [0m] Started LXD - container startup/shutdown.
+[[0;32m  OK  [0m] Started /etc/rc.local Compatibility.
+[   92.468202] cloud-init[953]: |   o    S ..  o.+|
+[   92.856673] [cloud-init[0;32m  OK  [0m[953]: |  = .  . = ..o.+.|
+] Started Login to default iSCSI targets.
+[[0;32m  OK  [0m] Started Virtualbox guest utils.
+[   92.857443] cloud-init[953]: |.o +  . . + o.o..|
+[   93.164810] [cloud-init[0;32m  OK  [0m[953]: ] |o .. .   . o o  o|Started LSB: Record successful boot for GRUB.
+
+[   93.165450] cloud-init[953]: |.+o++         .. |
+[   93.415067] [cloud-init[0;32m  OK  [0m[953]: ] +----[SHA256]-----+Started LSB: MD monitoring daemon.
+
+[[0;32m  OK  [0m] Started Login Service.
+[[0;32m  OK  [0m] Started Unattended Upgrades Shutdown.
+         Starting Authenticate and Authorize Users to Run Privileged Tasks...
+[[0;32m  OK  [0m] Reached target Remote File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Remote File Systems.
+         Starting LSB: automatic crash report generation...
+         Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+         Starting LSB: daemon to balance interrupts for SMP systems...
+         Starting Permit User Sessions...
+         Starting Wait until snapd is fully seeded...
+[[0;32m  OK  [0m] Started Permit User Sessions.
+[[0;32m  OK  [0m] Started Authenticate and Authorize Users to Run Privileged Tasks.
+[[0;32m  OK  [0m] Started Accounts Service.
+[[0;32m  OK  [0m] Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
+[[0;32m  OK  [0m] Started LSB: daemon to balance interrupts for SMP systems.
+         Starting Hold until boot process finishes up...
+         Starting Terminate Plymouth Boot Screen...
+[[0;32m  OK  [0m] Started Hold until boot process finishes up.
+[[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+         Starting Set console scheme...
+[[0;32m  OK  [0m] Started Getty on tty1.
+[[0;32m  OK  [0m] Reached target Login Prompts.
+[[0;32m  OK  [0m] Started Set console scheme.
+[[0;32m  OK  [0m] Started Pollinate to seed the pseudo random number generator.
+         Starting OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+[[0;32m  OK  [0m] Created slice User Slice of vagrant.
+         Starting User Manager for UID 1000...
+[[0;32m  OK  [0m] Started User Manager for UID 1000.
+[[0;32m  OK  [0m] Started Session 1 of user vagrant.
+
+Ubuntu 16.04.6 LTS ubuntu-xenial ttyS0
+
+ubuntu-xenial login: [  135.616403] cloud-init[1782]: Generating locales (this might take a while)...
+[  136.617264] cloud-init[1782]:   en_US.UTF-8... done
+[  136.617945] cloud-init[1782]: Generation complete.
+[  136.977270] cloud-init[1782]: Cloud-init v. 19.2-36-g059d049c-0ubuntu2~16.04.1 running 'modules:config' at Tue, 10 Dec 2019 23:12:00 +0000. Up 135.46 seconds.
+ci-info: no authorized ssh keys fingerprints found for user ubuntu.
+<14>Dec 10 23:12:02 ec2: 
+<14>Dec 10 23:12:02 ec2: #############################################################
+<14>Dec 10 23:12:02 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Dec 10 23:12:02 ec2: 1024 SHA256:RTRcIKxVpaD+kX3ALaMiheBBDWZTCBeGRKI9OkC9eV0 root@ubuntu-xenial (DSA)
+<14>Dec 10 23:12:02 ec2: 256 SHA256:Jfc3bz0lc35ujtty7hxuvg0E8MIADlOEUjJsaO69PpM root@ubuntu-xenial (ECDSA)
+<14>Dec 10 23:12:02 ec2: 256 SHA256:hRQM0i1qemK276iD/9Ux024t90Sn1LtFqUCHlTR2DIc root@ubuntu-xenial (ED25519)
+<14>Dec 10 23:12:02 ec2: 2048 SHA256:mycA5u5cyyVGeAZg0rctmHH6RuTQZSl1L7q0K4kvXXY root@ubuntu-xenial (RSA)
+<14>Dec 10 23:12:02 ec2: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Dec 10 23:12:02 ec2: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAVn6kLauENMQAVGjLIax6ZzD1RozTGdAv+LB0BXoVrRNWUciptc4yhWmBumO6zTG2Na/ASURxhN5KFRvgn0VOY= root@ubuntu-xenial
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFHulMSxMMDP6mhrCFRuaMW+iAKyR2GorPZnrNQUkI9M root@ubuntu-xenial
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgJ+UBTY/w2SQZfBrSp9f9Ov51eCb1RhJBJIt/i6UALHYHG80lXcR40woHcu7YmcUCYg47czA3RvgYi173OMxYaemB1CQkfdRRuWT7hPjLVlGH0qpmE3+E8OBOlsxwQoKyugI4oA4uZZUymULIoKELbKjlQHyHgxlQtC8BvoaZX0TlSKNlUKE0BTVqsXF6PdzZwnB/N/N4zCGMNJOND1bKeKDTIaw7EF1v8ABsqYTVUjFpKNkDN8HQimPCPrVkliQeMvZcKCxTruMM36T6cuaaeiGQxV3ByrR6HycrqDvb3epogLpI3fJ5ilfTK2Vborn7G9c2GWqb1nS9bthC7ZzZ root@ubuntu-xenial
+-----END SSH HOST KEY KEYS-----
+[  137.615231] cloud-init[1828]: Cloud-init v. 19.2-36-g059d049c-0ubuntu2~16.04.1 running 'modules:final' at Tue, 10 Dec 2019 23:12:02 +0000. Up 137.43 seconds.
+[  137.615470] cloud-init[1828]: ci-info: no authorized ssh keys fingerprints found for user ubuntu.
+[  137.615605] cloud-init[1828]: Cloud-init v. 19.2-36-g059d049c-0ubuntu2~16.04.1 finished at Tue, 10 Dec 2019 23:12:02 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 137.60 seconds
