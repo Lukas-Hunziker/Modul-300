@@ -198,7 +198,7 @@ Jetzt kann das PHP file im src Ordner abgeändert werden und Docker aktualisiert
 
 Falls es dann immer noch nicht funktionieren sollte wird es daran liegen, dass die Firewall den Zugriff blockt. Also in meinem Beispiel ist es unmöglich dies zu ändern, da es von der Domäne verwaltet wird und somit immer alles von Docker abgeblockt wird.
 
-##Mehrere Docker Services zusammen benutzen
+## Mehrere Docker Services zusammen benutzen
 
 Um mehrere Services miteinander zu benutzen kann kein ein Docker-compose file erstellt werden. So muss nicht jeder Service mühsam einzeln mit 
 ```
