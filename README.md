@@ -81,3 +81,9 @@ Den Status kann man folgendermassen aufrufen.
 ```
 sudo ufw status
 ```
+
+Um den Zugriff zu testen verwende
+```
+curl -f [IP]:80
+curl -f [IP]:22
+```
