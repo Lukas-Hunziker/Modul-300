@@ -35,13 +35,11 @@ Die VM ist jetzt erfolgreich gestartet. Jetzt kann mit SSH verbindet werden
 ```
 vagrant ssh
 ```
-Die VM kann gelöscht werden mit
+
+Befehle um die VM zu löschen und Updaten
 ```
-Vagrant Destroy
-```
-Um die VM auf den neusten stand des Vagrant files zu bringen kann dieser Befehl genutzt werden.
-```
-vagrant upgrade
+vagrant destroy                   #löscht die VM
+vagrant upgrade                   #updated die VM
 ```
 
 ## sed
