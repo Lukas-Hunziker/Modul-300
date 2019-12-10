@@ -3,7 +3,7 @@
 Um diese "Dokumentation" zu schreiben habe ich die Website https://stackedit.io benutzt.
 
 
-**Git Commands:**
+## Git Commands:
 ```
 $  cd Pfad/zu/meinem/Repository    # Zum lokalen GitHub-Repository wechseln
 
@@ -24,8 +24,6 @@ Damit "Infrastructure as Code" auf "Dynamic Infrastructure Platforms" genutzt we
 *	**Self-Service** - Ressourcen anpassen und auf eigene Bedürfnisse zuschneiden.
 *	**Portabel** - Anbieter von Ressourcen müssen austauschbar sein. Sicherheit, Zertifizierungen (z.B. [ISO 27001](https://de.wikipedia.org/wiki/ISO/IEC_27001)), ...
 
-# Tools
-Um Konfigurationsdateien mit dem "Infrastruktur als Code" Ansatz zu bearbeiten, eigen sich u.a. folgende Tools:
 ## sed
 sed (von stream editor) ist ein nicht-interaktiver Texteditor für die Verwendung auf der Kommandozeile oder in Skripten. sed zählt zu den "Urgesteinen" in der Unix- / Linux-Welt und ist quasi in jeder Linux-Installation (auch Minimalinstallationen) enthalten.
 
