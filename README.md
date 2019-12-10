@@ -136,7 +136,7 @@ Jetzt kann der Container gestartet werden mit
 ```
 docker run -p [port][vergebener name des Images]
 #Zum beispiel
-docker run -p 80:80 hello-world
+docker run -p 80:80 hello-world .
 ```
 Jetzt kann in unserem Fall localhost aufgerufen werden.
 Bei einer Änderung des PHP files, wird die Webseite nicht aktualisiert.
