@@ -197,3 +197,97 @@ Jetzt kann das PHP file im src Ordner abgeändert werden und Docker aktualisiert
 ![Falls es nicht funktionieren sollte, wird es daran liegen, dass Docker keine zugriff auf den Pfad hat. Dies kann angepasst werden, indem man in den Settings Docker zugriff auf den Datenträger gibt.](https://github.com/Lukas-Hunziker/Modul-300/blob/master/Docker_Shared-Drives_Error.png)
 
 Falls es dann immer noch nicht funktionieren sollte wird es daran liegen, dass die Firewall den Zugriff blockt. Also in meinem Beispiel ist es unmöglich dies zu ändern, da es von der Domäne verwaltet wird und somit immer alles von Docker abgeblockt wird.
+
+##Mehrere Docker Services zusammen benutzen
+
+Um mehrere Services miteinander zu benutzen kann kein ein Docker-compose file erstellt werden. So muss nicht jeder Service mühsam einzeln mit 
+```
+docker run -p [port][vergebener name des Images]
+```
+gestartet werden.
+
+In unserem Fall sieht das docker-compose.yml file folgendermassen aus:
+```
+version: '3'
+
+services:
+    product-service:
+        build: ./product
+        volumes:
+         - ./prodcut:/usr/src/app
+        ports:
+          - 5001:80
+    
+    website:
+      image: php:apache
+      volumes:
+        - ./website:/var/www/html
+      ports:
+        - 5000:80
+      depends_on:
+        - product-service
+```
+
+Wenn dieses File erstellt ist, können die definierten Services ganz einfach mit
+```
+docker-compose up
+```
+gestartet werden.
+
+Bei dem website service wurde sogar auf das Dockerfile verzichtet, indem einfach ein image geladen wird und dann der Ordner website dem Service geshared wird.
+
+Beim product service wurde ein Dockerfile erstellt wasa folgendermassen aussieht:
+```
+FROM php:7.0-apache
+COPY src/ /var/www/html
+EXPOSE 80
+``` 
+Um die Products aufzulisten wurde ein Python File erstellt, was folgenden Code beinhaltet:
+```
+# Product service
+
+from flask import Flask
+from flask_restful import Resource, Api
+
+app = Flask(__name__)
+api = Api(app)
+
+class Product(Resource):
+	def get(self):
+		return{
+				'products': ['Bannane',
+							'Schokolade',
+							'Donut']
+			  }
+
+api.add_resource(Product, '/')
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port=80, debug=True)
+```
+Damit dieses Python file vom Docker ausgeführt wird, benötigt man noch ein requirements.txt file was folgendermassen aussieht:
+```
+Flask==0.12
+flask-restful==0.3.5
+```
+Für die Webseite wurde ein einfach PHP file erstellt, was folgendermassen aussieht:
+``
+<html>
+	<head>
+		<title>My Webshop</title>
+	</head>
+	
+	<body>
+		<h1>Welcome to my Webshop</h1>
+		<ul>
+			<?php
+				$json = file_get_contents('http://product-service');
+				$obj = json_decode($json);
+				
+				$products = $obj->products;
+				foreach ($products as $product) {
+					echo "<li>$product</li>";
+				}				
+	</body>
+</html>
+```
