@@ -34,9 +34,7 @@ sudo -s
 Admin user erstellen
 ```
 adduser admin01
-```
-Password: luki2001
-```
+#Password: luki2001
 usermod -aG sudo admin01
 sudo su - admin01
 ```
