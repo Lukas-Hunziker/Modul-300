@@ -4,7 +4,7 @@ services:
     product-service:
         build: ./product
         volumes:
-         - ./prodcut:/usr/src/app
+         - ./product:/usr/src/app
         ports:
           - 5001:80
     

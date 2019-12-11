@@ -13,6 +13,7 @@
 				$products = $obj->products;
 				foreach ($products as $product) {
 					echo "<li>$product</li>";
-				}				
+				}	
+			?>
 	</body>
 </html>
