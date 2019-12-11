@@ -133,6 +133,9 @@ Der Webserver Pfad kann lokal mit folgender Einstellung lokal synchronisiert wer
 # Für einen snyced ordner mit VM Host
   config.vm.synced_folder "src/", "/var/www/html" 
 ```
+## Reverseproxy Netzwerkübersicht
+![enter image description here](https://raw.githubusercontent.com/eric2401/M300-Services_E/master/Untitled%20Diagram.png)
+
 ## Proxy einrichten 
 Um einen Proxy Server direkt mir dem Vagrant File zu installieren müssen folgende Befehle in der Vagrant File Shell Config hinzugefügt werden
 ```
@@ -157,6 +160,10 @@ Dies wird ebenfalls im in der Shell Section dees Vagrant Files configuriert.
   config.vm.network "private_network", ip: "172.28.128.12"
   config.vm.network "forwarded_port", guest: 80, host: 9090
 ```
+
+##Wie funktionieren Docker Container
+
+![Unterschied VM und Container](https://blog.gbs.com/wp-content/uploads/2016/10/windows-server-2016-grafik.jpg?x99775)
 
 ## Docker
 Installiere Docker auf der Offiziellen Webseite und führe das Programm als Administrator aus.
